@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #ffeb3b, #ff9800);
+    background: linear-gradient(to right, #c3b8b8, #7fc7ff);
 }
 
 header {
@@ -52,7 +52,7 @@ section {
 }
 
 footer {
-    background-color: #ff5722;
+    background-color: #cacaca;
     color: #fff;
     text-align: center;
     padding: 1em 0;
