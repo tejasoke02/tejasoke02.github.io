@@ -2,11 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #f4f4f4, #e2e2e2);
+    background: linear-gradient(to right, #ffeb3b, #ff9800);
 }
 
 header {
-    background-color: #333;
+    background-color: #ff5722;
     color: #fff;
     padding: 1em 0;
     text-align: center;
@@ -35,7 +35,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff6347;
+    color: #ffeb3b;
 }
 
 main {
@@ -45,14 +45,14 @@ main {
 section {
     margin-bottom: 2em;
     padding: 1em;
-    border: 1px solid #ddd;
+    border: 1px solid #ff9800;
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background-color: #333;
+    background-color: #ff5722;
     color: #fff;
     text-align: center;
     padding: 1em 0;
