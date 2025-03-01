@@ -65,11 +65,15 @@ footer {
 .photo-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
 }
 
-.photo-gallery img {
+.photo-item {
+    text-align: center;
+}
+
+.photo-item img {
     max-width: 200px;
     height: auto;
     border-radius: 8px;
@@ -78,7 +82,7 @@ footer {
     transition: transform 0.2s;
 }
 
-.photo-gallery img:hover {
+.photo-item img:hover {
     transform: scale(1.05);
 }
 
