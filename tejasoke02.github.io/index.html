@@ -1,3 +1,5 @@
+Here are the contents for the updated index.html file:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +41,7 @@
         </section>-->
         <section id="teaching">
             <h2>Teaching</h2>
-            <p>I have been an Teaching assistent for several courses during my undergrad studies at CMI. At Caltech I have TA'ed a couple courses: Freshman Analysis (Ma1a), Probability and Statistics (Ma3)</p>
+            <p>I have been a Teaching assistant for several courses during my undergrad studies at CMI. At Caltech I have TA'ed a couple courses: Freshman Analysis (Ma1a), Probability and Statistics (Ma3)</p>
         </section>
         <section id="contact">
             <h2>Contact</h2>
@@ -49,5 +51,49 @@
     <footer>
         <p>&copy; 2025 Tejas Oke. All rights reserved.</p>
     </footer>
+</body>
+</html>
+
+And here are the contents for the new photos.html file:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Photos</h1>
+    </header>
+    <main>
+        <h2>Upload Photos</h2>
+        <form id="uploadForm">
+            <input type="file" id="fileInput" accept="image/*" multiple>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="photoGallery"></div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Tejas Oke. All rights reserved.</p>
+    </footer>
+    <script>
+        const form = document.getElementById('uploadForm');
+        const gallery = document.getElementById('photoGallery');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const files = document.getElementById('fileInput').files;
+            for (let i = 0; i < files.length; i++) {
+                const img = document.createElement('img');
+                img.src = URL.createObjectURL(files[i]);
+                img.style.width = '200px'; // Set a width for the images
+                img.style.margin = '10px'; // Add some margin
+                gallery.appendChild(img);
+            }
+        });
+    </script>
 </body>
 </html>
