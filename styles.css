@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #ff5722;
+    background-color: hsl(0, 75%, 20%);
     color: #fff;
     padding: 1em 0;
     text-align: center;
@@ -35,7 +35,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffeb3b;
+    color: #e9e9e9;
 }
 
 main {
@@ -45,7 +45,7 @@ main {
 section {
     margin-bottom: 2em;
     padding: 1em;
-    border: 1px solid #ff9800;
+    border: 1px solid #b2b2b2;
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
