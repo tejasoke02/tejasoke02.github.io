@@ -198,3 +198,54 @@ footer {
 lightbox-overlay.active {
     display: flex;
 }
+
+/* Lightbox overlay styles */
+.lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
+.lightbox-overlay.active {
+    display: flex;
+}
+
+/* General styling for images */
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.photo-item {
+    text-align: center;
+}
+
+.photo-item img,
+.main-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.photo-item img:hover,
+.main-image:hover {
+    transform: scale(1.05);
+}
