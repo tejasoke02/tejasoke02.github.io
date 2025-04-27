@@ -152,53 +152,6 @@ footer {
     width: 100%;
 }
 
-.photo-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.photo-item {
-    text-align: center;
-}
-
-.photo-item img {
-    max-width: 200px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.photo-item img:hover {
-    transform: scale(1.05);
-}
-
-.lightbox-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-.lightbox-overlay img {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 8px;
-}
-
-lightbox-overlay.active {
-    display: flex;
-}
-
 /* Lightbox overlay styles */
 .lightbox-overlay {
     display: none;
@@ -223,7 +176,7 @@ lightbox-overlay.active {
     display: flex;
 }
 
-/* General styling for images */
+/* Photo gallery styling */
 .photo-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -233,10 +186,10 @@ lightbox-overlay.active {
 
 .photo-item {
     text-align: center;
+    max-width: 200px; /* Ensure photos are small by default */
 }
 
-.photo-item img,
-.main-image {
+.photo-item img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
@@ -245,7 +198,14 @@ lightbox-overlay.active {
     transition: transform 0.2s;
 }
 
-.photo-item img:hover,
-.main-image:hover {
+.photo-item img:hover {
     transform: scale(1.05);
+}
+
+.photo-item p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+    font-style: italic;
+    text-align: center;
 }
